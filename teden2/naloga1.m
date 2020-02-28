@@ -2,7 +2,7 @@
 f = @(x)sin(x) .* exp(sqrt(x)); % x \in [1, 3]
 g = {@(t)cos(t), @(t)sin(t)}; % t \in [0, 2*pi]
 h = {@(t)cos(t), @(t)sin(t), @(t)t}; % t \in [0, 10*pi]
-k = @(x, y)(x.^2 + y.^2)/(1 + x + y); % x \in [0, 1], y \in [0, 1]
+k = @(x, y)(x.^2 + y.^2)./(1 + x + y); % x \in [0, 1], y \in [0, 1]
 
 subplot(2, 2, 1); 
 x1 = linspace(1, 3, 1000); 

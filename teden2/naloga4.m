@@ -23,8 +23,10 @@ plot3(X(inds), Y(inds), Z(inds), 'o-');
 % -------------------------- d ---------------------------
 
 syms f(x, y);
+
 dfx = diff(f, x);
 dfy = diff(f, y); 
+
 dfx_x_dfy = @(x, y) [-dfx(x, y); -dfy(x, y); 1];
 
 
